@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /home/ubuntu/src
 hooks:
-  BeforeInstall:
+  ApplicationStart:
     - location: scripts/start_server
       timeout: 300
       runas: root
