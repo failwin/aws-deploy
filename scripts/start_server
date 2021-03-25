@@ -1,5 +1,4 @@
 #!/bin/bash
-source ~/.profile
-source ~/.bashrc
-cd /home/ubuntu/src
-node index.js
+
+forever stopall
+forever start /home/ubuntu/src/index.js
