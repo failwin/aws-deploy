@@ -1,4 +1,6 @@
 #!/bin/bash
 
+source ~/.profile
+
 forever stopall
 forever start /home/ubuntu/src/index.js
