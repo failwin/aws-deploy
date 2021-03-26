@@ -7,6 +7,12 @@ chmod +x install_nvm.sh
 bash ./install_nvm.sh -y
 rm ./install_nvm.sh
 
+source ~/.profile
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 nvm install 12.18 -y
 
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -15,7 +21,7 @@ sudo apt-get update -y
 
 sudo apt-get install --no-install-recommends yarn -y
 
-yarn add pm2 -g -y
+npm install pm2 -g
 
 cd /home/ubuntu/src
 
