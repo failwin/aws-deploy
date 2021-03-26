@@ -15,7 +15,7 @@ sudo apt-get update -y
 
 sudo apt-get install --no-install-recommends yarn -y
 
-npm install pm2 -g -y
+yarn add pm2 -g -y
 
 cd /home/ubuntu/src
 
