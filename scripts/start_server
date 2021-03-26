@@ -7,8 +7,6 @@ chmod +x install_nvm.sh
 bash ./install_nvm.sh -y
 rm ./install_nvm.sh
 
-source ~/.profile
-
 nvm install 12.18 -y
 
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -18,8 +16,6 @@ sudo apt-get update -y
 sudo apt-get install --no-install-recommends yarn -y
 
 yarn global add forever -y
-
-source ~/.profile
 
 forever stopall
 forever start /home/ubuntu/src/index.js
