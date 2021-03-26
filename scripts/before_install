@@ -9,22 +9,3 @@
 # https://www.npmjs.com/package/forever
 # sudo npm install forever -g
 
-
-sudo sudo apt-get install build-essential libssl-dev -y
-
-curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh -o install_nvm.sh
-chmod +x install_nvm.sh
-bash ./install_nvm.sh -y
-rm ./install_nvm.sh
-
-source ~/.profile
-
-nvm install 12.18 -y
-
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update -y
-
-sudo apt-get install --no-install-recommends yarn -y
-
-yarn global add forever -y
