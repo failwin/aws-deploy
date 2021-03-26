@@ -15,7 +15,8 @@ sudo apt-get update -y
 
 sudo apt-get install --no-install-recommends yarn -y
 
-npm install forever -g -y
+npm install pm2 -g -y
 
-forever stopall
-forever start /home/ubuntu/src/index.js
+cd /home/ubuntu/src
+
+pm2 start ./index.js
