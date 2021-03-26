@@ -15,7 +15,7 @@ sudo apt-get update -y
 
 sudo apt-get install --no-install-recommends yarn -y
 
-yarn global add forever -y
+npm install forever -g -y
 
 forever stopall
 forever start /home/ubuntu/src/index.js
